@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import axios from "axios";
 
-function MainPage() {
+function MainPageComponent() {
   const [products, setProducts] = React.useState([]);
   React.useEffect(function () {
     axios
@@ -39,7 +39,7 @@ function MainPage() {
                 </div>
                 <div className="product-contents">
                   <span className="product-name">{product.name}</span>
-                  <span className="product-price">{product.price}</span>
+                  <span className="product-price">{product.price}원</span>
                   <div className="product-seller">
                     <img
                       className="product-avatar"
@@ -58,4 +58,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default MainPageComponent;

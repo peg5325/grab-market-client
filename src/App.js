@@ -1,10 +1,23 @@
 import "./App.css";
-import MainPage from "./main";
+import MainPageComponent from "./main";
+import { Switch, Route } from "react-router-dom";
+import UploadPage from "./upload";
+import ProductPage from "./product";
 
 function App() {
   return (
     <div>
-      <MainPage />
+      <Switch>
+        <Route exact={true} path="/">
+          <MainPageComponent />
+        </Route>
+        <Route exact={true} path="/product">
+          <ProductPage />
+        </Route>
+        <Route exact={true} path="/upload">
+          <UploadPage />
+        </Route>
+      </Switch>
     </div>
   );
 }
