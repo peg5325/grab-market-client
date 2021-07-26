@@ -92,3 +92,8 @@
 .product-avatar {
   width: 24px;
 }
+
+.product-link {
+  color: inherit; /* 다른 텍스트들이 원래 가지고 있던 색상을 가지게 함 */
+  text-decoration: none; /* none으로 했을 때, a 태그를 하면 밑줄이 생기는데 그것을 없애줌  */
+}
